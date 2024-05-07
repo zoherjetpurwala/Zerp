@@ -1,13 +1,7 @@
-
-import executeQuery from "./mysqldb";
-
-export default function Home() {
-  const result = executeQuery("select * from employees", [])
+const Homepage = () => {
   return (
-    <div>
-    <h1 className="">Hello Next</h1>
-    {JSON.stringify(result)}
-    </div>
-
-  );
+    <div>Homepage</div>
+  )
 }
+
+export default Homepage
